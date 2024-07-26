@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+    <style>
+        .relative{
+            width: 100px;
+           /* height:80px;*/
+            background-color: rgb(42, 165, 114);
+            color:azure;
+            padding: 40px 0px;
+            border:solid;
+            border-style: dotted;
+            position: relative;
+            top: 20px;       /*by giving top=20,it pushes the text to 20px down*/
+            left: 30px;     /*by giving left=30,it pushes the text to 30px right*/
+            text-shadow: 2px 3px rgb(74, 12, 133);
+            font-weight: 200px;
+            font-size: 20px;
+            
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            border: 2px solid;
+            position: relative;
+            top:30px;
+            background-color: rgb(83, 205, 209);
+            text-align: center;
+            text-decoration-line:underline ;
+        }
+        .absolute{
+            width: 200px;
+            height: 200px;
+            color: blue;
+            background-color:rgb(220, 122, 233);
+            position: absolute;
+            bottom: 0px; /*giving bottom=0,it comes to the bottom of the container*/
+            right: 0px;  /*giving right=0,it comes to rightside inside the container*/
+            text-align:justify;
+            text-align-last: center;
+            border: solid palegoldenrod;
+         }   
+    </style>
+</head>
+<body>
+    
+    <div class="relative">Relative</div>
+    <div class="container">
+        See at Right Corner 
+        <div class="absolute"><center>absolute content</center><br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A neque reprehenderit ratione ullam optio dolor assumenda tempore omnis, ab, commodi expedita! Tenetur reiciendis labore inventore voluptates rerum accusantium id unde.
+        </div>
+    </div>
+</body>
+</html>
